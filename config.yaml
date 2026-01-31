@@ -1,7 +1,12 @@
-# 基础配置
-stock_list: []  # 这里留空，它会自动去读你的 Secrets STOCK_LIST
+# 1. 股票列表 (留空，让程序去读 Secrets 里的 STOCK_LIST)
+stock_list: []
 
-# 推送配置 (最关键的部分)
+# 2. 大模型配置 (指定使用 Gemini)
+llm:
+  type: "gemini"
+  model: "gemini-1.5-flash"
+
+# 3. 推送配置 (强制开启钉钉)
 push:
-  enable: true        # 开启推送
-  type: 'dingtalk'    # 指定用钉钉
+  enable: true
+  type: 'dingtalk'
