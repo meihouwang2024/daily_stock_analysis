@@ -1,0 +1,7 @@
+# 基础配置
+stock_list: []  # 这里留空，它会自动去读你的 Secrets STOCK_LIST
+
+# 推送配置 (最关键的部分)
+push:
+  enable: true        # 开启推送
+  type: 'dingtalk'    # 指定用钉钉
